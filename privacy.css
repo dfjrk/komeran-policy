@@ -2,4 +2,16 @@
 body { margin: 0; background: Canvas; color: CanvasText; }
 main { max-width: 760px; margin: auto; padding: 28px 20px 60px; overflow-wrap: anywhere; }
 h1 { font-size: 1.65rem; line-height: 1.4; }
+h1 span { display: inline-block; }
 h2 { margin-top: 2em; font-size: 1.2rem; }
+* { box-sizing: border-box; }
+nav { display: flex; flex-wrap: wrap; gap: 8px 20px; padding-block: 8px; }
+nav a[aria-current="page"] { font-weight: 700; }
+a { color: LinkText; text-underline-offset: 0.2em; }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid Highlight; outline-offset: 3px; }
+h3 { font-size: 1.05rem; margin-top: 1.5em; }
+li { margin-block: 0.5em; }
+code { font-size: 0.9em; overflow-wrap: anywhere; }
+.install-step { font-size: 0.9rem; margin-top: 24px; }
+.install-note { font-size: 0.9rem; }
+@media (max-width: 400px) { main { padding: 20px 16px 40px; } h1 { font-size: 1.45rem; } }
